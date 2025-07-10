@@ -1,38 +1,55 @@
 # 🧠 Projeto de Transfer Learning em Python
 
-Este repositório contém a solução para o desafio de aplicar **Transfer Learning** usando Python e TensorFlow, proposto no curso da **Digital Innovation One (DIO)**.
-
-O projeto é dividido em duas partes:
-- Um **notebook Colab** com o treinamento de um modelo baseado no MNIST.
-- Um **aplicativo Android nativo** que utiliza esse modelo `.tflite` para reconhecer números em tempo real via câmera.
+Este projeto foi desenvolvido como parte de um desafio proposto pela **Digital Innovation One (DIO)**, com o objetivo de aplicar **Transfer Learning** para reconhecimento de dígitos numéricos usando Python e TensorFlow.
 
 ---
 
-O modelo foi treinado com o dataset **MNIST** usando a técnica de **Transfer Learning**
+## 🔍 Visão Geral
 
-O app foi desenvolvido com **Jetpack Compose + CameraX** e utiliza o modelo `.tflite` para reconhecer números em tempo real através da câmera.
+A solução está dividida em duas partes:
 
-### 📷 Funcionalidades:
-- Câmera ativa com **retângulo de guia visual**
-- Reconhecimento de números (0–9) diretamente no dispositivo
-- Atualização contínua do dígito detectado
+1. 📓 Um **notebook Colab** com o treinamento de um modelo baseado no **dataset MNIST**.
+2. 📱 Um **aplicativo Android nativo** que utiliza o modelo `.tflite` para reconhecer dígitos numéricos **em tempo real via câmera**.
 
+---
 
-### ⚙️ Tecnologias utilizadas:
-- Kotlin
-- Jetpack Compose
-- CameraX
-- TensorFlow Lite
+## 🧠 Modelo
 
+- Treinado com o **MNIST** para classificar dígitos de 0 a 9.
+- Utiliza **Transfer Learning com MobileNetV2**.
+- Exportado no formato **TensorFlow Lite (.tflite)** para uso em dispositivos móveis.
 
-### 🚀 Como testar:
-1. Abra o projeto Android no Android Studio
-2. Rode o app em um dispositivo ou emulador com câmera
+---
 
+## 📷 Funcionalidades do App
 
-## 📈 Resultados esperados
+- Visualização da câmera com um retângulo de guia central.
+- Reconhecimento em tempo real de números manuscritos ou impressos.
+- Exibição contínua do número detectado diretamente no app.
 
-- Reconhecimento eficaz de números manuscritos ou impressos
-- Baixo custo computacional (modelo leve e eficiente)
-- Rodando 100% offline no dispositivo
+---
 
+## ⚙️ Tecnologias Utilizadas
+
+- **Kotlin**
+- **Jetpack Compose**
+- **CameraX**
+- **TensorFlow Lite**
+
+---
+
+## 🚀 Como Testar
+
+1. Abra o projeto Android no Android Studio.
+2. Rode o app em um dispositivo físico ou emulador com câmera.
+3. Posicione um número no centro da tela para reconhecer.
+
+---
+
+## 📈 Resultados Esperados
+
+- Reconhecimento rápido e eficiente de dígitos.
+- Baixo consumo de recursos (modelo leve).
+- Funciona **100% offline**.
+
+---
